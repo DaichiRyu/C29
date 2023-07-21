@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>写真撮影での登録</title>
+	<link rel="stylesheet" type="text/css" href="css/photo register.css" />
+    </head>
+    <body>
+        <header class="title">
+            <a href="../home.php"><img src="../images/shape02.png" alt=""></a>
+            <p>撮影登録</p>
+            <span></span>
+        </header>
+        <main>
+        <form method="post" action="php/save.php" name="imgfrom" enctype="multipart/form-data">
+            <div id="app">
+    		    <label for="imgname"><h2>写真を撮影してアップロードする</h2></label>
+    		    <input id="imgname" type="file" name="imgname" accept="image/*" capture onchange="previewImage(this);">
+                <p>
+                    Preview:<br>
+                    <img id="preview" name="viewimg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:500px;">
+                </p>
+		    </div>
+            <footer>
+                <span></span>
+	            <button id="button-register" type="submit">送信</button>
+                <button id="button-cancel" type="button" onclick="formReset()">リセット</button>
+            
+            </footer>
+        </form>
+        <script>
+            var IMG = document.getElementById('preview');
+            function previewImage(obj)
+            {
+                var fileReader = new FileReader();
+                fileReader.onload = (function() {
+                    IMG.src = fileReader.result;
+                });
+                fileReader.readAsDataURL(obj.files[0]);
+            }
+            function formReset() {
+            IMG.src = " ";
+            document.imgfrom.reset();
+            document.viewimg.reset();
+            
+            }
+            </script>
+
+
+    </body>
+</html>
