@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+body header {
+  border-bottom: 2px solid #dfdfdf;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  text-align: center;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header span {
+  width: 25px;
+}
+body header a {
+  display: flex;
+}
+body header a img {
+  width: 25px;
+}
+body main {
+  margin-top: 100px;
+}
+body main p {
+  margin: 15px;
+}
+body main div {
+  border-top: 2px solid #dfdfdf;
+  border-bottom: 2px solid #dfdfdf;
+}
+body main div a {
+  background-color: white;
+  display: flex;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  justify-content: space-between;
+  border-bottom: 1px solid #dfdfdf;
+}
+body main div a img {
+  margin: 0;
+  width: 24px;
+  float: right;
+}
+body main div a:last-child {
+  border: none;
+}/*# sourceMappingURL=guide.css.map */
