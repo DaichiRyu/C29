@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+body .createAccountForm header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+body .createAccountForm header a {
+  display: inline-block;
+  height: 25px;
+}
+body .createAccountForm header a img {
+  width: 25px;
+}
+body .createAccountForm h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #3c3c3c;
+}
+body .createAccountForm .createAccountForm_body {
+  margin: 30px 40px;
+}
+body .createAccountForm .createAccountForm_body form input {
+  border: 2px solid #dfdfdf;
+  border-radius: 4px;
+}
+body .createAccountForm .createAccountForm_body form #input-email {
+  padding: 12px 11px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 30px 0 0;
+}
+body .createAccountForm .createAccountForm_body form #input-pw {
+  padding: 12px 11px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 30px 0 0;
+}
+body .createAccountForm .createAccountForm_body form #input-pw2 {
+  padding: 12px 11px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 30px 0 0;
+}
+body .createAccountForm .createAccountForm_body form p {
+  color: gray;
+}
+body .createAccountForm .createAccountForm_body form button {
+  margin: 50px 35px 0;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #ffbb66;
+  color: white;
+  font-size: 15px;
+  width: 240px;
+  letter-spacing: 2px;
+  border: none;
+  padding: 12px 11px;
+}
+body .createAccountForm .createAccountForm_body form .formGroup-checkbox {
+  display: flex;
+  margin: 30px 0 0;
+  box-sizing: border-box;
+}
+body .createAccountForm .createAccountForm_body form .formGroup-checkbox #input-checkbox {
+  display: block;
+  box-sizing: border-box;
+  transform: scale(2);
+  margin-right: 20px;
+}
+body .createAccountForm .createAccountForm_body form .formGroup-checkbox span {
+  color: #3c3c3c;
+  letter-spacing: 2px;
+}
+body .createAccountForm .createAccountForm_body form .formGroup-checkbox span a {
+  color: rgb(93, 93, 255);
+}/*# sourceMappingURL=createAccount.css.map */

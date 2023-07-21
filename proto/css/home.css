@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+body header {
+  border-bottom: 2px solid #dfdfdf;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  text-align: center;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header span {
+  width: 100px;
+}
+body header p {
+  margin: 0;
+}
+body header a {
+  display: flex;
+}
+body header a img {
+  width: 50px;
+}
+body #questionnaire {
+  margin: 0 20px 100px;
+  text-align: center;
+}
+body #questionnaire a {
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #5896cd;
+  padding: 10px 20px;
+}
+body main {
+  margin: 100px 20px 60px;
+  display: flex;
+  justify-content: center;
+}
+body main #foods-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 350px;
+}
+body main #foods-container .food {
+  border-radius: 5px;
+  border: 2px solid #dfdfdf;
+  width: 30%;
+  background-color: white;
+  height: 60px;
+  margin: 0 0 20px;
+  position: relative;
+}
+body main #foods-container .food p:first-child {
+  margin: 0;
+  overflow: hidden;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 2px 10px;
+}
+body main #foods-container .food p:nth-child(2) {
+  background: rgba(215, 116, 0, 0.5);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 3px;
+  font-size: 13px;
+  white-space: nowrap;
+  padding: 0 10px;
+  text-align: right;
+  text-overflow: ellipsis;
+}
+body main #foods-container .food a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+body main #foods-container .ub-red {
+  background-color: #ffdede;
+  border: 2px solid #ffb0b0;
+}
+body main #foods-container .ub-yellow {
+  background-color: #fbffdf;
+  border: 2px solid #e6e57f;
+}
+body main #foods-container::after {
+  content: "";
+  display: block;
+  width: 30%;
+}
+body footer {
+  border-top: 2px solid #dfdfdf;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+body footer div {
+  display: flex;
+  flex-direction: column;
+}
+body footer div img {
+  width: 45px;
+}
+body footer div p {
+  margin: 0;
+  font-size: 11px;
+  text-align: center;
+}
+body footer .home {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body footer .home img {
+  width: 45px;
+}
+body footer .home p {
+  margin: 0;
+  font-size: 11px;
+  text-align: center;
+}
+body footer .home a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+body footer #edit-food {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body footer #edit-food img {
+  width: 45px;
+}
+body footer #edit-food p {
+  margin: 0;
+  font-size: 11px;
+  text-align: center;
+}
+body footer #edit-food a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+body footer #menu-container-register {
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: -85px;
+  width: 100%;
+  left: 0px;
+  padding: 10px 0;
+  border-top: 2px solid #dfdfdf;
+}
+body footer #menu-container-register div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body footer #menu-container-register div div {
+  flex-direction: column;
+  position: relative;
+}
+body footer #menu-container-register div div a {
+  position: absolute;
+  width: 55px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}/*# sourceMappingURL=home.css.map */

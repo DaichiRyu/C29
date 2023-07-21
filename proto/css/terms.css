@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+body header h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #3c3c3c;
+  margin: 50px 0;
+}
+body main {
+  margin: 50px 0 0;
+}
+body main .terms_desc {
+  margin: 30px 40px;
+  color: #3c3c3c;
+}
+body main .terms_body {
+  margin: 30px 40px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+body main .terms_body div {
+  margin: 10px;
+}
+body main .terms_body div h2 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #3c3c3c;
+  font-size: 18px;
+}
+body main .terms_body div ol {
+  font-size: 14px;
+}
+body main .terms_body div ul {
+  list-style-type: none;
+}/*# sourceMappingURL=terms.css.map */

@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    header {
+        border-bottom: 2px solid #dfdfdf;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        span {
+            content: "";
+            width: 32px;
+        }
+        a {
+            height: 25px;
+
+            img {
+                width: 25px;
+            }
+        }
+        #favorite {
+            background-color: white;
+            background-image: url(../images/unfav.png);
+            background-size: 35px;
+            background-repeat: no-repeat;
+            height: 35px;
+            width: 35px;
+            
+        }
+        #favorite[data-faved="1"] {
+            background-image: url(../images/fav.png);
+        }
+        // button[data-faved="0"] {
+        //     background-image: url(./images/unfav.png);
+        // }
+    }
+
+    main {
+        margin: 100px 20px;
+        div {
+            table {
+                width: 100%;
+                border-spacing: 0 15px;
+                table-layout: fixed;
+                tr {
+                    th {
+                        padding: 20px 0;
+                        width: 100px;
+                        font-weight: 100;
+                    }
+                    td {
+                        background-color: #ffffff;
+                        padding: 20px 10px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+        footer {
+            border-top: 2px solid #dfdfdf;
+            height: 80px;
+            position: fixed;
+            bottom: 0;
+    
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: white;
+    
+            div {
+                display: flex;
+                flex-direction: column;
+    
+                img {
+                    width: 45px;
+                }
+    
+                p {
+                    margin: 0;
+                    font-size: 11px;
+                    text-align: center;
+                }
+    
+                label {
+                    margin: 0;
+                    font-size: 11px;
+                    text-align: center;
+                }
+            }
+    
+            .home {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+    
+                img {
+                    width: 45px;
+                }
+    
+                p {
+                    margin: 0;
+                    font-size: 11px;
+                    text-align: center;
+                }
+    
+                a {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+    
+            #edit-food {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+    
+                img {
+                    width: 45px;
+                }
+    
+                p {
+                    margin: 0;
+                    font-size: 11px;
+                    text-align: center;
+                }
+    
+                a {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+    
+            #menu-container-register {
+                display: block;
+                background-color: white;
+                position: absolute;
+                top: -85px;
+                width: 100%;
+                left: 0px;
+                padding: 10px 0;
+                border-top: 2px solid #dfdfdf;
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+
+                    div {
+                        flex-direction: column;
+                        position: relative;
+
+                        a {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }

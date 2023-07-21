@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+body .deleteAccountForm header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+body .deleteAccountForm header a {
+  display: inline-block;
+  height: 25px;
+}
+body .deleteAccountForm header a img {
+  width: 25px;
+}
+body .deleteAccountForm h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #3c3c3c;
+}
+body .deleteAccountForm .deleteAccountForm_body {
+  margin: 30px 40px;
+}
+body .deleteAccountForm .deleteAccountForm_body form input {
+  border: 2px solid #dfdfdf;
+  border-radius: 4px;
+}
+body .deleteAccountForm .deleteAccountForm_body form #input-email {
+  padding: 12px 11px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 30px 0 0;
+}
+body .deleteAccountForm .deleteAccountForm_body form #input-pw {
+  padding: 12px 11px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 30px 0 0;
+}
+body .deleteAccountForm .deleteAccountForm_body form #input-pw2 {
+  padding: 12px 11px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 30px 0 0;
+}
+body .deleteAccountForm .deleteAccountForm_body form p {
+  color: gray;
+}
+body .deleteAccountForm .deleteAccountForm_body form button {
+  margin: 50px 35px 0;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #ff7f5b;
+  color: white;
+  font-size: 15px;
+  width: 240px;
+  letter-spacing: 2px;
+  border: none;
+  padding: 12px 11px;
+}
+body .deleteAccountForm .deleteAccountForm_body form .formGroup-checkbox {
+  display: flex;
+  margin: 30px 0 0;
+  box-sizing: border-box;
+}
+body .deleteAccountForm .deleteAccountForm_body form .formGroup-checkbox #input-check {
+  display: block;
+  box-sizing: border-box;
+  transform: scale(2);
+  margin-right: 20px;
+}
+body .deleteAccountForm .deleteAccountForm_body form .formGroup-checkbox span {
+  color: #3c3c3c;
+  letter-spacing: 2px;
+}
+body .deleteAccountForm .deleteAccountForm_body form .formGroup-checkbox span a {
+  color: rgb(93, 93, 255);
+}/*# sourceMappingURL=deleteAccount.css.map */

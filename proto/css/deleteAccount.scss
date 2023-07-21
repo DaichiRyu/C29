@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    .deleteAccountForm {
+        header {
+                height: 80px;
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+        
+                a {
+                    display: inline-block;
+                    height: 25px;
+        
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+            h1 {
+                text-align: center;
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                color: #3c3c3c;
+            }
+            .deleteAccountForm_body {
+                margin: 30px 40px;
+
+                form {
+                    input {
+                        border: 2px solid #dfdfdf;
+                        border-radius: 4px;
+                    }
+
+                    #input-email {
+                        padding: 12px 11px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        margin: 30px 0 0;
+                    }
+
+                    #input-pw {
+                        padding: 12px 11px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        margin: 30px 0 0;
+                    }
+
+                    #input-pw2 {
+                        padding: 12px 11px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        margin: 30px 0 0;
+                    }
+
+                    p {
+                        color: gray;
+                    }
+
+                    button {
+                        margin: 50px 35px 0;
+                        text-align: center;
+                        border-radius: 100px;
+                        background-color: #ff7f5b;
+                        color: white;
+                        font-size: 15px;
+                        width: 240px;
+                        letter-spacing: 2px;
+                        border: none;
+                        padding: 12px 11px;
+                    }
+
+                    .formGroup-checkbox {
+                        display: flex;
+                        margin: 30px 0 0;
+                        box-sizing: border-box;
+
+                        #input-check {
+                            display: block;
+                            box-sizing: border-box;
+                            transform: scale(2.0);
+                            margin-right: 20px;
+                        }
+
+                        span {
+                            color: #3c3c3c;
+                            letter-spacing: 2px;
+
+                            a {
+                                color: rgb(93, 93, 255);
+
+                            }
+                        }
+                    }
+                }
+            }
+    }
+}
