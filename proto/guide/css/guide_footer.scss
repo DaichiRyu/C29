@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+
+    header {
+        border-bottom: 2px solid #dfdfdf;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: white;
+        text-align: center;
+        line-height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        span {
+            width: 25px;
+        }
+
+        a {
+            display: flex;
+
+            img {
+                width: 25px;
+            }
+        }
+    }
+
+    main {
+        margin-top: 100px;
+
+        p {
+            margin: 15px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 250px;
+                border: 2px solid #dfdfdf;
+            }
+        }
+    }
+}

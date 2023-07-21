@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+body header {
+  border-bottom: 2px solid #dfdfdf;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  text-align: center;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header span {
+  width: 25px;
+}
+body header a {
+  display: flex;
+}
+body header a img {
+  width: 25px;
+}
+body main {
+  margin-top: 100px;
+}
+body main p {
+  margin: 15px;
+}
+body main div {
+  display: flex;
+  justify-content: center;
+}
+body main div img {
+  width: 250px;
+  border: 2px solid #dfdfdf;
+}/*# sourceMappingURL=guide_barcoderegister.css.map */
