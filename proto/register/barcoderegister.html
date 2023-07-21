@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>バーコードでの登録</title>
+
+    <link rel ="stylesheet" href="css/barcoderegister.css">
+    <script src="js/quagga.min.js"></script> 
+    <script src="../js/include/util.js"></script>
+    <script src="js/barcode.js"></script>
+    <script src="js/barcodeRegister.js"></script>
+</head>
+<body>
+    <header class="title">
+        <a href="../home.php"><img src="../images/shape02.png" alt=""></a>
+        <p>バーコード登録</p>
+        <span></span>
+    </header>
+    <main>
+        <div class="scan">バーコードをスキャンしてください</div>
+        <!--↓のidとclassは変更しないこと-->
+        <div id="interactive" class="viewport">
+            <video id="video" autoplay></video>
+        </div>
+        <div class="scan">
+            <input type="text" id="input-code" name="jancode" title="jancode">
+            <button type="button" id="button-append-row" title="add">追加</button>
+        </div>
+        <div class="barcode">
+            <!-- Begin Yahoo! JAPAN Web Services Attribution Snippet -->
+            <span style="margin:15px 15px 15px 15px"><a href="https://developer.yahoo.co.jp/sitemap/">Web Services by Yahoo! JAPAN</a></span>
+            <!-- End Yahoo! JAPAN Web Services Attribution Snippet -->
+            <p>バーコード一覧</p>
+            <table id="code-list">
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <form action="searchFromJancode.php" method="POST" name="formJancode">
+            <input type="hidden" name="jancode" id="input-code-list">
+            <button id="button-sumbit" type="button">登録へ進む</button>
+        </form>
+    </footer>
+</body>
+</html>
