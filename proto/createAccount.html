@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アカウント作成</title>
+    <link rel="stylesheet" href="css/createAccount.css">
+
+    <script src="js/include/util.js"></script>
+    <script src="js/createAccount.js"></script>
+</head>
+
+<body>
+
+    <div class="createAccountForm">
+        <header>
+            <a href="login.html"><img src="images/shape02.png" alt=""></a>
+        </header>
+        <h1>ストライタアカウントの作成</h1>
+        <div class="createAccountForm_body">
+            <form action="php/createAccount.php" method="post" autocomplete="off" name="formCreateAccount">
+                <input type="text" name="email" id="input-email" placeholder="メールアドレス">
+                <input type="password" name="password" id="input-pw" placeholder="パスワード">
+                <p>8文字以上32文字以下、半角英数がそれぞれ１文字以上</p>
+                <input type="password" name="password2" id="input-pw2" placeholder="パスワード再入力">
+                <div class="formGroup-checkbox">
+                    <input type="checkbox" name="checkbox" id="input-checkbox"><span><a
+                            href="terms.html" target="_blank">利用規約</a>に同意する</span>
+                </div>
+                <button type="button" id="button-submit">アカウント作成</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

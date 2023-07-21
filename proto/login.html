@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン</title>
+    <link rel="stylesheet" href="css/login.css">
+
+    <script src="js/include/util.js"></script>
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+    <div class="loginForm">
+        <img src="images/logo.png" alt="">
+        <div class="loginForm_body">
+            <form action="php/auth.php" method="post">
+                <input type="text" name="email" id="input-email" placeholder="メールアドレス">
+                <input type="password" name="password" id="input-pw" placeholder="パスワード">
+                <input type="submit" value="ログイン" id="login-button">
+            </form>
+        </div>
+        <div class="loginForm_resister">
+            <p class="loginForm_resister_etc"></p>
+            <a href=" createAccount.html">アカウント作成<img src="images/shape01.png" alt=""></a>
+            <a href="deleteAccount.html">アカウント削除<img src="images/shape01.png" alt=""></a>
+        </div>
+    </div>
+</body>
+
+</html>

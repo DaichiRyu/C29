@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>アカウント削除</title>
+        <link rel="stylesheet" href="css/deleteAccount.css">
+
+        <script src="js/include/util.js"></script>
+        <script src="js/deleteAccount.js"></script>
+    </head>
+    <body>
+        <div class="deleteAccountForm">
+            <header>
+                <a href="login.html"><img src="images/shape02.png" alt=""></a>
+            </header>
+            <h1>アカウントの削除</h1>
+            <div class="deleteAccountForm_body">
+                <form action="php/deleteAccount.php" method="post" autocomplete="off" name="formDeleteAccount">
+                    <input type="text" name="email" id="input-email" placeholder="メールアドレス">
+                    <input type="password" name="password" id="input-pw" placeholder="パスワード">
+                    <div class="formGroup-checkbox">
+                        <input type="checkbox" name="check" id="input-check"><label for="input-check">アカウントを削除する</label>
+                    </div>
+                    <button type="button" id="button-submit">アカウント削除</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
