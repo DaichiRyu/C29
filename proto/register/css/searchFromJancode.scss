@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+
+    // #executing {
+    //     display: none;
+    // }
+    #menu {
+        display: none;
+        position: absolute;
+        width: 90%;
+        margin: 0 4.5%;
+        /* padding: 0; */
+        background: #ffffff;
+        z-index: 1;
+        border-radius: 20px;
+        border: 2px solid #dfdfdf;
+
+        .menu-header {
+            padding: 10px;
+
+            #cross-btn {
+                img {
+                    width: 50px;
+                }
+            }
+
+            p {
+                text-align: center;
+                font-size: 20px;
+                margin: 0 0 15px;
+            }
+        }
+
+        .menu-main {
+            #favorite-container {
+                padding: 0 10px;
+
+                table {
+                    margin: auto;
+                    border-collapse: collapse;
+
+                    thead {
+                        tr {
+                            color: #8e8e8e;
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            td[data-col-name="number"] {
+                                text-align: right;
+                            }
+
+                            td[data-col-name="money"] {
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .menu-footer {
+            height: 70px;
+            border-radius: 0 0 20px 20px;
+            background-color: #ffffff;
+        }
+    }
+
+    header {
+        border-bottom: 2px solid #dfdfdf;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        #menu-btn {
+            content: "";
+            width: 32px;
+            height: 32px;
+
+            img {
+                width: 30px;
+            }
+        }
+
+        a {
+            height: 25px;
+
+            img {
+                width: 25px;
+            }
+        }
+    }
+
+    main {
+        margin: 100px 20px 0;
+
+        #foods-container {
+            .food:last-child {
+                margin-bottom: 150px;
+            }
+            .food {
+                background-color: white;
+                border: 2px solid #dfdfdf;
+                margin-bottom: 50px;
+                border-radius: 5px;
+                .food-left {
+                    display: flex;
+                    margin: 15px 0;
+                    label {
+                        width: 100px;
+                        padding: 20px 0;
+                        text-align: center;
+                    }
+                    input {
+                        margin: 10px;
+                    }
+                }
+                .food-right {
+                    div {
+                        display: flex;
+                        margin-bottom: 15px;
+                        label {
+                            width: 100px;
+                            padding: 20px 0;
+                            text-align: center;
+                        }
+                        select {
+                            margin: 10px;
+                        }
+                        input {
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        border-top: 2px solid #dfdfdf;
+        height: 80px;
+        position: fixed;
+        bottom: 0;
+
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+
+        #button-submit {
+            width: 100px;
+            text-align: center;
+            font-size: 17px;
+            border-radius: 25px;
+            padding: 5px;
+            font-weight: 600;
+            color: white;
+            background-color: #ffbb66;
+        }
+
+        #button-cancel {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        span {
+            content: "";
+            width: 80px;
+        }
+    }
+}

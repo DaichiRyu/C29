@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+body #menu {
+  display: none;
+  position: absolute;
+  width: 90%;
+  margin: 0 4.5%;
+  /* padding: 0; */
+  background: #ffffff;
+  z-index: 1;
+  border-radius: 20px;
+  border: 2px solid #dfdfdf;
+}
+body #menu .menu-header {
+  padding: 10px;
+}
+body #menu .menu-header #cross-btn img {
+  width: 50px;
+}
+body #menu .menu-header p {
+  text-align: center;
+  font-size: 20px;
+  margin: 0 0 15px;
+}
+body #menu .menu-main #favorite-container {
+  padding: 0 10px;
+}
+body #menu .menu-main #favorite-container table {
+  margin: auto;
+  border-collapse: collapse;
+}
+body #menu .menu-main #favorite-container table thead tr {
+  color: #8e8e8e;
+}
+body #menu .menu-main #favorite-container table tbody tr td[data-col-name=number] {
+  text-align: right;
+}
+body #menu .menu-main #favorite-container table tbody tr td[data-col-name=money] {
+  text-align: right;
+}
+body #menu .menu-footer {
+  height: 70px;
+  border-radius: 0 0 20px 20px;
+  background-color: #ffffff;
+}
+body header {
+  border-bottom: 2px solid #dfdfdf;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body header #menu-btn {
+  content: "";
+  width: 32px;
+  height: 32px;
+}
+body header #menu-btn img {
+  width: 30px;
+}
+body header a {
+  height: 25px;
+}
+body header a img {
+  width: 25px;
+}
+body main {
+  margin: 100px 20px 0;
+}
+body main #foods-container .food:last-child {
+  margin-bottom: 150px;
+}
+body main #foods-container .food {
+  background-color: white;
+  border: 2px solid #dfdfdf;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+body main #foods-container .food .food-left {
+  display: flex;
+  margin: 15px 0;
+}
+body main #foods-container .food .food-left label {
+  width: 100px;
+  padding: 20px 0;
+  text-align: center;
+}
+body main #foods-container .food .food-left input{
+  margin: 10px;
+}
+body main #foods-container .food .food-right div{
+  display: flex;
+  margin-bottom: 15px;
+}
+body main #foods-container .food .food-right div label{
+  width: 100px;
+  padding: 20px 0;
+  text-align: center;
+}
+body main #foods-container .food .food-right div select{
+  margin: 10px;
+}
+body main #foods-container .food .food-right div input{
+  margin: 10px;
+}
+body main div #button-container #button-add {
+  width: 50px;
+  height: 50px;
+  color: #6d6d6d;
+  border: 2px solid #6d6d6d;
+  border-radius: 50%;
+  font-size: 32px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 150px;
+  background-color: white;
+}
+body footer {
+  border-top: 2px solid #dfdfdf;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+body footer #button-submit {
+  width: 100px;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 25px;
+  padding: 5px;
+  font-weight: 600;
+  color: white;
+  background-color: #ffbb66;
+}
+body footer #button-cancel a {
+  text-decoration: none;
+  color: black;
+}
+body footer span {
+  content: "";
+  width: 80px;
+}/*# sourceMappingURL=searchFromJancode.css.map */

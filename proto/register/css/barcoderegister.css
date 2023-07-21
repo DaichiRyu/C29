@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+body header {
+  border-bottom: 2px solid #dfdfdf;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 10;
+}
+body header span {
+  content: "";
+  width: 32px;
+}
+body header a {
+  height: 25px;
+}
+body header a img {
+  width: 25px;
+}
+body main {
+  margin: 81px 0;
+  position: relative;
+}
+body main #interactive {
+  height: 293px;
+  text-align: center;
+}
+body main .scan {
+  display: flex;
+  justify-content: center;
+  background-color: #777777;
+  color: white;
+  padding: 15px;
+}
+body main .scan input {
+  font-size: 20px;
+  border-radius: 2px;
+  border: 2px solid #dfdfdf;
+  margin-right: 10px;
+}
+body main .scan #button-append-row {
+  font-size: 15px;
+}
+body main #interactive #video {
+  height: 100%;
+}
+body main #interactive .drawingBuffer {
+  width: 0%;
+}
+body main .barcode {
+  margin: 30px 0 170px;
+}
+body main .barcode span {
+  display: flex;
+  justify-content: center;
+}
+body main .barcode span a {
+  text-decoration: none;
+  font-size: 13px;
+}
+body main .barcode p {
+  text-align: center;
+  border-bottom: 2px solid #dfdfdf;
+  padding: 10px;
+  margin: 0 50px;
+}
+body main .barcode #code-list {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+body main .barcode #code-list tbody tr td {
+  border-radius: 5px;
+  padding: 5px 50px;
+  border: 2px solid #dfdfdf;
+  background: white;
+}
+body footer {
+  border-top: 2px solid #dfdfdf;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+body footer form #button-sumbit {
+  background: #ffbb66;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+body footer form #code {
+  font-size: 15px;
+}/*# sourceMappingURL=barcoderegister.css.map */
