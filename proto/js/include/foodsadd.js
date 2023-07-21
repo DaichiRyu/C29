@@ -76,7 +76,6 @@ class Food {
         let container = document.createElement("div");
         let leftContainer = document.createElement("div");
         let rightContainer = document.createElement("div");
-        let containerName = document.createElement("div");
         let containerNumber = document.createElement("div");
         let containerUb = document.createElement("div");
         let containerBb = document.createElement("div");
@@ -99,8 +98,8 @@ class Food {
         let inputMoney = document.createElement("input");
 
         container.classList.add("food");
-        leftContainer.classList.add("food-left-container");
-        rightContainer.classList.add("food-right-container");
+        leftContainer.classList.add("food-left");
+        rightContainer.classList.add("food-right");
 
         labelName.innerText = "食品名";
         labelNumber.innerText = "個数";
@@ -116,13 +115,13 @@ class Food {
         inputBb.type = "date";
         inputMoney.type = "number";
 
-        inputName.name = "name";
-        inputNumber.name = "number";
-        inputUb.name = "ub";
-        inputBb.name = "bb";
-        inputStorage.name = "storage";
-        inputGenre.name = "genre";
-        inputMoney.name = "money";
+        inputName.className="food-name editable-input";
+        inputNumber.className="food-number editable-input";
+        inputUb.className="food-ub editable-input";
+        inputBb.className="food-bb editable-input";
+        inputStorage.className="food-storage select-storage editable-input";
+        inputGenre.className="food-genre select-genre editable-input";
+        inputMoney.className="food-money editable-input";
 
         Object.keys(StrgLoc).forEach(entry => {
             let elem = document.createElement("option");
@@ -148,9 +147,8 @@ class Food {
         inputBb.value = this.bb;
         inputMoney.value = this.money;
 
-        containerName.append(labelName);
-        containerName.append(inputName);
-        leftContainer.append(containerName);
+        leftContainer.append(labelName);
+        leftContainer.append(inputName);
         containerNumber.append(labelNumber);
         containerNumber.append(inputNumber);
         containerUb.append(labelUb);
@@ -182,7 +180,6 @@ class Food {
         let container = document.createElement("div");
         let leftContainer = document.createElement("div");
         let rightContainer = document.createElement("div");
-        let containerName = document.createElement("div");
         let containerNumber = document.createElement("div");
         let containerUb = document.createElement("div");
         let containerBb = document.createElement("div");
@@ -205,8 +202,8 @@ class Food {
         let inputMoney = document.createElement("input");
 
         container.classList.add("food");
-        leftContainer.classList.add("food-left-container");
-        rightContainer.classList.add("food-right-container");
+        leftContainer.classList.add("food-left");
+        rightContainer.classList.add("food-right");
 
         labelName.innerText = "食品名";
         labelNumber.innerText = "個数";
@@ -222,13 +219,13 @@ class Food {
         inputBb.type = "date";
         inputMoney.type = "number";
 
-        inputName.name = "name";
-        inputNumber.name = "number";
-        inputUb.name = "ub";
-        inputBb.name = "bb";
-        inputStorage.name = "storage";
-        inputGenre.name = "genre";
-        inputMoney.name = "money";
+        inputName.className="food-name editable-input";
+        inputNumber.className="food-number editable-input";
+        inputUb.className="food-ub editable-input";
+        inputBb.className="food-bb editable-input";
+        inputStorage.className="food-storage select-storage editable-input";
+        inputGenre.className="food-genre select-genre editable-input";
+        inputMoney.className="food-money editable-input";
 
         inputNumber.value="1";
 
@@ -248,9 +245,8 @@ class Food {
             inputGenre.append(elem);
         });
 
-        containerName.append(labelName);
-        containerName.append(inputName);
-        leftContainer.append(containerName);
+        leftContainer.append(labelName);
+        leftContainer.append(inputName);
         containerNumber.append(labelNumber);
         containerNumber.append(inputNumber);
         containerUb.append(labelUb);
