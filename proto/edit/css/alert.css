@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+}
+
+.alert {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.alert div:first-child {
+  border: 1px solid;
+  padding: 10px 45px;
+}/*# sourceMappingURL=alert.css.map */
