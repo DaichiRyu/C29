@@ -1,0 +1,17 @@
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">-->
+  <script>
+  $.ajax({
+      type: "POST", //　GETでも可
+      url: "https://stolitor.com/home/register/php/test.php", //　送り先
+      data: { '名前': jsnarray, '数量' : jsvarray}, //　渡したいデータをオブジェクトで渡す
+      dataType : "json", //　データ形式を指定
+      scriptCharset: 'utf-8' //　文字コードを指定
+  })
+  .then(
+      function(param){　 //　paramに処理後のデータが入って戻ってくる
+          console.log(param); //　帰ってきたら実行する処理
+      },
+      function(XMLHttpRequest, textStatus, errorThrown){ //　エラーが起きた時はこちらが実行される
+          console.log(XMLHttpRequest); //　エラー内容表示
+  });
+  </script>
