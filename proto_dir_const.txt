@@ -1,0 +1,99 @@
+﻿proto
+│  createAccount.html -> アカウント作成ページ
+|  deleteAccount.html -> アカウント削除ページ
+│  detail.php ->食品の詳細ページ
+│  home.php -> ホームページ
+│  login.html -> ログインページ
+│  terms.html -> 利用規約ページ
+│  
+├─css
+|  |  createAccount.css
+|  |  deleteAccount.css
+|  |  detail.css
+|  |  home.css
+|  |  login.css
+|  └─ terms.css
+|  
+├─images
+|  |
+|  |  barcode.png
+|  |  cross.png
+|  |  edit.png
+|  |  fav.png
+|  |  home.png
+|  |  input.png
+|  |  logo.png
+|  |  menu.png
+|  |  photo.png
+|  |  receipt.png
+|  |  reg.png
+|  |  shape01.png
+|  |  shape02.png
+|  └─ unfav.png
+|  
+├─js
+│  │  createAccount.js
+|  |  deleteAccount.js
+|  |  detail.js
+│  │  home.js
+│  │  login.js
+│  │  
+│  └─include -> 前提jsファイル（必須ではない）
+│       |  foods.js
+│       └─ util.js
+│          
+├─php
+│  │  auth.php -> ログイン認証
+│  │  createAccount.php -> アカウント作成
+│  │  deleteAccount.php 
+│  │  favorite.php
+│  │  insertFood.php
+│  │  insertFoods.php
+│  │  logout.php -> ログアウト
+│  │  requestFoods.php -> DBに食品情報を要求
+│  │  requestGenre.php
+│  │  requestStorage.php
+│  │  searchFromJancode.php
+│  │  
+│  └─include -> 前提phpファイル（必須ではない）
+|        |  includeAll.php
+│        |  pdoConnect.php -> PDO接続
+│        └─ util.php -> 便利系
+|
+├─edit
+|  |  alart.html
+|  |  edit.php -> 全体編集
+|  |  edits.php -> 個別編集
+|  ├─css  
+|  ├─js
+|  └─php
+|     |
+|     └─ updateFoods.php
+|
+|
+|
+|
+|
+│          
+└─register -> 登録系
+    │  register.php -> 手入力
+    |  barcoderegister.html -> バーコード入力
+    │  searchFromJancode.php
+    |  result.php -> 食品撮影の登録用
+    |  
+    ├─css
+    │  |  register.css
+    |  |  barcoderegister.css
+    |  └─ searchFromJancode.css
+    │      
+    ├─js
+    │  |  barcode.js
+    │  |  barcodeRegister.js
+    │  |  menu.js
+    │  |  quagga.min.js
+    │  |  register.js
+    │  └─ searchFromJancode.js
+    │
+    └─php
+       └─ registerFood.php -> 登録
+            
